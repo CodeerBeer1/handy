@@ -1,0 +1,91 @@
+@font-face {
+	font-family: Archivo;
+	src: url(fonts/Archivo-Bold.ttf);
+}
+body {
+	font-family: Archivo;
+}
+.pagina {
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+	z-index: 2;
+}
+.logo {
+	grid-area: 1/1;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+.navbar {
+	width: 950px;
+	margin: 0px auto;
+	background-color: #222931;
+}
+.lijstje {
+	margin-top: 0px;
+}
+li {
+	list-style: none;
+	display: inline;
+}
+.overknop ,.homeknop, .portknop {
+	font-weight: bolder;
+	border:none;
+	padding: 17px;
+	background-color: #222931;
+	color: white;
+	outline: none;
+}
+button:hover {
+	cursor: pointer;
+	background-color: yellow;
+}
+button:hover a {
+	color: black;
+}
+.subover {
+	display: inline;
+	position: absolute;
+}
+.dropcontent {
+	display: none;
+	position: relative;
+	min-width: 175px;
+	min-height: 105px;
+	background-color: #222931;
+}
+.dropcontent a {
+	display: block;
+	padding: 10px;
+	padding-bottom: 5px;
+	font-family: arial;
+	text-decoration: none;
+	color: white;
+}
+.dropcontent a:hover {
+	background-color: yellow;
+	color: black;
+	font-weight: bolder;
+}
+.subover:hover .dropcontent {
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.headerdiv {
+	position: relative;
+	width: 1500px;
+	height: 500px;
+	margin:0px auto;
+	bottom: 43px;
+	z-index: 1;
+}
+.header {
+	width: 1500px;
+	height: 500px;
+}
+.bannerdiv {
+margin: 0px auto;
+}
