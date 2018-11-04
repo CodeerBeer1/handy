@@ -86,6 +86,11 @@ a {
 	width: 1500px;
 	height: 500px;
 }
+.bannerdiv img {
+	width: 400px;
+	height: 300px;
+}
 .bannerdiv {
-margin: 0px auto;
+	position: relative;
+	margin: 0px auto;
 }
