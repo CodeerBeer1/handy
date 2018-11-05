@@ -86,21 +86,37 @@ a {
 	width: 1500px;
 	height: 500px;
 }
-.bannerdiv  {
-	width: 1300px;
-	height: 300px;
-	position: relative;
+.banner {
+	width: 1000px;
 	margin: 0px auto;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 300px 300px 300px;
 }
-.bannerdiv img {
-	width: 400px;
-	height: 300px;
-	margin-left: 20px;
+.banner1div {
+	position: relative;
+	z-index: 1;
 }
-.overlay {
-	position: absolute;
-	width: 400px;
-	height: 300px;
+.banner2div {
+	grid-area: 1/2;
+}
+.banner2.jpg {
+	grid-area: 1/3;
+}
+.banner1o {
+	z-index: 2;
+	grid-area: 1/1;
+	font-size: 30px;
 	background-color: black;
-	transition: .5s ease;
+	opacity: 0;
+	width: 300px;
+	height: 223px;
+	transition: .5s;
+}
+.banner1o,.banner2o,.banner3o {
+	position: absolute;
+}
+.banner:hover .banner1o {
+	opacity: 0.5;
+	transition: .5s;
 }
