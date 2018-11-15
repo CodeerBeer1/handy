@@ -1,211 +1,128 @@
-@font-face {
-	font-family: Archivo;
-	src: url(fonts/Archivo-Bold.ttf);
-}
-body {
-	font-family: Archivo;
-}
-.pagina {
-	width: 1000px;
-	margin: 0px auto;
-	position: relative;
-	z-index: 2;
-}
-.logo {
-	grid-area: 1/1;
-	margin-left: 50px;
-	margin-bottom: 15px;
-}
-.navbar {
-	width: 950px;
-	margin: 0px auto;
-	background-color: #222931;
-}
-.overknop img {
-	padding-left: 5px;
-	width: 20px;
-	height: 20px;
-	color: white;
-}
-.lijstje {
-	margin-top: 0px;
-}
-li {
-	list-style: none;
-	display: inline;
-}
-.overknop ,.homeknop, .portknop {
-	font-weight: bolder;
-	border:none;
-	padding: 17px;
-	background-color: #222931;
-	color: white;
-	outline: none;
-}
-.overknop:hover .overknop img {
-	color: white;
-}
-button:hover {
-	cursor: pointer;
-	background-color: yellow;
-}
-button:hover a {
-	color: black;
-}
-.subover {
-	display: inline;
-	position: absolute;
-}
-.dropcontent {
-	display: none;
-	position: relative;
-	min-width: 175px;
-	min-height: 105px;
-	background-color: #222931;
-}
-.dropcontent a {
-	display: block;
-	padding: 10px;
-	padding-bottom: 5px;
-	font-family: arial;
-	text-decoration: none;
-	color: white;
-}
-.dropcontent a:hover {
-	background-color: yellow;
-	color: black;
-	font-weight: bolder;
-}
-.subover:hover .dropcontent {
-	display: block;
-}
-a {
-	text-decoration: none;
-	color: white;
-}
-.headerdiv {
-	position: relative;
-	width: 1500px;
-	height: 500px;
-	margin:0px auto;
-	bottom: 43px;
-	z-index: 1;
-}
-.header {
-	width: 1500px;
-	height: 500px;
-}
-.banner {
-	width: 1000px;
-	margin: 0px auto;
-	display: grid;
-	grid-gap: 50px;
-	grid-template-columns: 300px 300px 300px;
-	padding-bottom: 43px;
-}
-.banner1div {
-	position: relative;
-	z-index: 1;
-}
-.banner2div {
-	grid-area: 1/2;
-}
-.banner2.jpg {
-	grid-area: 1/3;
-}
-.banner1o {
-	z-index: 2;
-	grid-area: 1/1;
-	font-size: 30px;
-	background-color: black;
-	opacity: 0;
-	width: 300px;
-	height: 223px;
-	transition: .5s;
-}
-.banner1o,.banner2o,.banner3o {
-	position: absolute;
-}
-.banner:hover .banner1o {
-	opacity: 0.5;
-	transition: .5s;
-}
-.banner1o:hover .geschiedenisdiv {
-	opacity: 1 !important;
-	color: white;
-}
-.wijbouwen {
-	margin: 0px auto;
-	width: 1500px;
-	display: grid;
-	grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-	background-color: yellow;
-	padding: 80px;
-}
-.p1 {
-	grid-area: 1/2/2/6;
-	font-size: 40px;
-}
-.p2 {
-	grid-area: 1/5/2/7;
-	margin-left: 50px;
-	padding-top: 20px;
-	font-size: 20px;
-}
-.meerweten {
-	grid-area: 1/8/2/10;
-	color: black;
-	background-color: white;
-	padding: 10px;
-	border: none;
-	font-size: 20px;
-}
-.meerweten:hover {
-	background-color: black;
-	color: white;
-	font-weight: bolder;
-}
-.footercontainer {
-	display: grid;
-	grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-	grid-template-rows: 142.5px 142.5px;
-	width: 1500px;
-	margin: 0px auto;
-}
-.footercontainer img {
+/*FONTS*/
 
-	position: relative;
-	margin-top: 43px;
-	width: 1500px;
-	z-index: 1;
-}
-.dienstenfoot,.dealsfoot,.contactfoot {
-	position: relative;
-	z-index: 2;
-	width: 350px;
-	height: 150px;
-	top: 200px;
-	background-color: yellow;
-}
-.dienstenfoot {
-	grid-area: 1/5;
-}
-.contactfoot {
-	grid-area: 1/8;
-}
-.boven {
-	position: absolute;
-	font-size: 30px;
-	top: 40px;
-	left: 120px;
-}
-.beneden {
-	position: absolute;
-	top: 100px;
-	left: 120px;
-}
-.svg img {
-	width: 70px;
-	height: 70px;
-	left: 20px;
-}
+	@font-face {
+		font-family: archivo;
+		src: url(fonts/Archivo-Medium.ttf);
+	}
+
+/*FONTS*/
+
+
+/*PAGINA'S*/
+
+	.home {
+	margin: 0px auto;
+	font-family: archivo;
+	width: 1000px;
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px 200px;
+	grid-template-rows: 45px 75px 100px 100px 100px 100px
+						100px 100px 100px 100px;}
+
+/*PAGINA'S*/
+
+
+
+/*LOGO*/
+
+	.logodiv {
+		margin: 20px 0px 0px 60px;
+		width: 262px;
+		height: 25px;
+	}
+
+/*LOGO*/
+
+
+
+/*NAVBAR*/
+
+	.navbardiv {
+		width: 950px;
+		position: relative;
+		background-color: #222931;
+		grid-area: 2/1/3/6;
+		margin: auto auto;
+		height: 50px;
+	}
+
+	.navbardiv ul {
+		margin: 0px;
+	}
+
+	.navbardiv li {
+		display: inline;		
+	}
+
+	.navbardiv button {
+		position: relative;
+		color: white;
+		border: none;
+		outline: none;
+		background-color: #222931;
+		font-size: 12px;
+		margin: 0px 0px 0px 0px;
+		height: 50px;
+		padding: 0px 20px 0px 20px;
+		transition: .2s;
+	}
+
+	.navbardiv button:hover {
+		background-color: #ffe718;
+		color: black;
+		font-weight: bolder;
+		cursor: pointer;
+	}
+
+
+	.fa-angle-down {
+		padding: 0 5px;
+	}
+
+
+
+	/*SUBMENU*/
+
+		.submenudiv {
+			display: block;
+
+			width: 200px;
+			height: 100px;
+			position: relative;
+			left: 120px; 
+		}
+
+		.submenudiv ul {
+			position: relative;
+			padding: 0px;
+			background-color: #222931;	
+			color: white;
+			line-height: 30px;
+		}
+
+		.submenudiv li {
+			transition: .2s;
+		}
+
+		.submenudiv li:hover {
+			background-color: #ffe718;
+			cursor: pointer;
+			color: black;
+			font-weight: bold;
+		}
+
+		.geschiedenisli {
+			padding: 6px 91px 3px 10px;
+		}
+
+		.deali {
+			padding: 6px 149px 3px 10px;
+		}
+
+		.dienstli {
+			padding: 6px 126px 3px 10px;
+		}
+
+	/*SUBMENU*/
+
+/*NAVBAR*/
